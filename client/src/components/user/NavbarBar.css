@@ -1,0 +1,63 @@
+/* Style for the navbar container */
+nav {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #202044;
+      padding: 10px;
+    }
+    
+    /* Style for the unordered list in the navbar */
+    nav ul {
+      list-style-type: none; /* Remove bullets */
+      margin: 0;             /* Remove default margin */
+      padding: 0;            /* Remove default padding */
+      display: flex;         /* Align items horizontally */
+      align-items: center;   /* Align vertically */
+    }
+    
+    /* Style for individual list items */
+    nav ul li {
+      font-size: 22px;
+      margin-right: 70px;    /* Add some spacing between items */
+      color: white;          /* White text for all items */
+    }
+    
+    /* Style for the brand name (SEMHALL) */
+    nav ul li:first-child {
+      font-size: 34px;       /* Make SEMHALL larger */
+      margin-right: auto;    /* Push the remaining links to the right */
+      font-weight: bolder;   /* Extra bold for the brand name */
+      letter-spacing: 1px;   /* Slight letter spacing for a clean look */
+    }
+    
+    /* Style for the links */
+    nav ul li a {
+      color: white;          /* White text color */
+      text-decoration: none; /* Remove underline */
+      padding: 8px 16px;     /* Add some padding to make the links larger */
+      border-radius: 5px;    /* Round the corners */
+      transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+    
+    /* Hover effect for the links */
+    nav ul li a:hover {
+      background-color: #575757; /* Slightly lighter background on hover */
+      color: #fff;               /* Keep the text white on hover */
+    }
+    
+    /* Active link styling (Optional: Use active class for active link) */
+    nav ul li a.active {
+      background-color: #007BFF; /* Highlight the active link with blue */
+      color: white;              /* White text for the active link */
+    }
+    
+    /* Make the navbar responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;  /* Stack the items vertically on smaller screens */
+      }
+    
+      nav ul li {
+        margin-bottom: 10px;    /* Add spacing between items */
+      }
+    }
+    
