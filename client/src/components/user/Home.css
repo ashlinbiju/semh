@@ -1,0 +1,58 @@
+/* Home.css */
+
+/* Container for the entire home */
+.home-container {
+    background-color: #f4f4f4; /* Light background color */
+    padding: 20px; /* Add some padding */
+    min-height: 100vh; /* Ensure the container takes full height */
+    text-align: center; /* Center align all text */
+}
+
+/* Header styles */
+.header {
+    margin-bottom: 30px; /* Space below the header */
+}
+
+.header h1 {
+    font-size: 36px; /* Font size for main heading */
+    color: #333; /* Dark text color */
+}
+
+.header p {
+    font-size: 18px; /* Standard font size for paragraph text */
+    color: #555; /* Slightly lighter color for text */
+}
+
+/* Main content styling */
+.main-content {
+    margin: 20px 0; /* Space above and below main content */
+}
+
+/* Section styles */
+.info-section,
+.about-section,
+.contact-section {
+    margin-bottom: 20px; /* Space below each section */
+}
+
+.info-section h2,
+.about-section h2,
+.contact-section h2 {
+    font-size: 24px; /* Font size for section headings */
+    color: #333; /* Dark text color */
+}
+
+.info-section p,
+.about-section p,
+.contact-section p {
+    font-size: 16px; /* Font size for paragraph text */
+    color: #555; /* Slightly lighter color for text */
+}
+
+/* Footer styles */
+.footer {
+    margin-top: 30px; /* Space above the footer */
+    padding: 10px 0; /* Padding around footer */
+    background-color: #007bff; /* Footer background color */
+    color: white; /* White text color */
+}

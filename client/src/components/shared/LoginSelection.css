@@ -1,0 +1,49 @@
+/* Updated CSS for Login Selection Page */
+.login-selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%); /* Gradient background */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+  }
+  
+  h1 {
+    margin-bottom: 50px;
+    font-size: 36px; /* Increased font size */
+    color: #ffffff; /* White text for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow for better visibility */
+  }
+  
+  /* Center login options */
+  .login-options {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .login-btn {
+    padding: 20px 40px; /* Larger padding for a more prominent button */
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* Softer, rounded corners */
+    cursor: pointer;
+    background-color: #007bff; /* Vibrant blue */
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  .login-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Add focus outline for accessibility */
+  }
+  

@@ -1,0 +1,14 @@
+.manage-hall-container {
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Use a clean font for readability */
+}
+
+.hall-list {
+    list-style-type: decimal; /* Numbered list */
+    padding-left: 20px;      /* Indentation for the list */
+}
+
+.hall-list li {
+    margin-bottom: 10px;      /* Space between list items */
+    font-size: 16px;          /* Font size for hall names */
+}
