@@ -1,12 +1,11 @@
-import React from 'react';
 import { Link } from 'react-router-dom'; 
-import NavbarBar from './NavbarBar'; // Import the NavbarBar
 import './Home.css';
+import NavbarBar from './NavbarBar';
 
 const Home = () => {
     return (
-        <div className="home-container">
-            <NavbarBar /> {/* Add the NavbarBar here */}
+        <div className="home-container"> {/* Wrap everything in a single parent div */}
+            <NavbarBar /> {/* Include the NavbarBar component */}
             <header className="header">
                 <h1>Welcome to the Seminar Hall Booking System</h1>
                 <p>Your one-stop solution for booking seminar halls efficiently.</p>
@@ -21,7 +20,7 @@ const Home = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/view-hall" className="nav-link">
+                            <Link to="/user/view-hall" className="nav-link"> {/* Updated path to match your routes */}
                                 View Hall
                             </Link>
                         </li>
