@@ -1,26 +1,23 @@
+// src/components/shared/LoginSelection.jsx
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './LoginSelection.css'; // Make sure to import your CSS file
 
 const LoginSelection = () => {
-    const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate();
 
-    const handleAdminLogin = () => {
-        navigate('/admin/admin-home'); // Redirect to the admin home
-    };
+  const handleSelection = (role) => {
+    navigate(`/login/${role}`); // Navigate to the login page with the selected role (admin or user)
+  };
 
-    const handleUserLogin = () => {
-        navigate('/user/home'); // Redirect to the user home (if you have one)
-    };
-
-    return (
-        <div className="login-selection-container">
-            <h1>Who is logging in?</h1>
-            <div className="login-options">
-                <button className="login-btn" onClick={handleAdminLogin}>Admin</button>
-                <button className="login-btn" onClick={handleUserLogin}>User</button>
-            </div>
-        </div>
-    );
+  return (
+    <div className="login-selection-container">
+      <h1>Select your role</h1>
+      <div className="login-options">
+        <button className="login-btn" onClick={() => handleSelection('admin')}>Login as Admin</button>
+        <button className="login-btn" onClick={() => handleSelection('user')}>Login as User</button>
+      </div>
+    </div>
+  );
 };
 
 export default LoginSelection;
