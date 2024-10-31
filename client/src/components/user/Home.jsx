@@ -5,7 +5,7 @@ import NavbarBar from './NavbarBar';
 const Home = () => {
     return (
         <div className="home-container"> {/* Wrap everything in a single parent div */}
-            <NavbarBar /> {/* Include the NavbarBar component */}
+            {/* <NavbarBar /> Include the NavbarBar component */}
             <header className="header">
                 <h1>Welcome to the Seminar Hall Booking System</h1>
                 <p>Your one-stop solution for booking seminar halls efficiently.</p>
