@@ -1,39 +1,54 @@
+/* Navbar.css */
+
+/* Navbar styling to cover the full width */
 .navbar {
-    background-color: #333;
-    padding: 1rem;
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .site-name {
-    font-size: 2rem; /* Adjust this size if needed */
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .nav-links li {
-    display: inline;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  
-  .nav-links a:hover {
-    color: #ddd;
-  }
-  
+  background-color: #001f3f; /* Dark blue background */
+  padding: 1rem; /* Padding around the navbar */
+  width: 100%; /* Full width */
+  position: fixed; /* Fixed position at the top */
+  top: 0; /* Aligns to the top */
+  left: 0; /* Aligns to the left */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Container for navbar items */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Space between site name and links */
+  align-items: center; /* Center items vertically */
+  max-width: 1200px; /* Optional: limit the width for larger screens */
+  margin: auto; /* Center the container */
+}
+
+/* Site name styling */
+.site-name {
+  font-size: 2rem; /* Size for the site name */
+  font-weight: bold; /* Bold text */
+  color: white; /* White text color */
+  text-transform: uppercase; /* Uppercase letters */
+}
+
+/* List of navigation links */
+.nav-links {
+  list-style: none; /* Remove bullets from list */
+  display: flex; /* Horizontal display */
+  gap: 2rem; /* Space between links */
+}
+
+/* List item styling */
+.nav-links li {
+  display: inline; /* Inline list items */
+}
+
+/* Link styling */
+.nav-links a {
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 500; /* Medium weight font */
+  font-size: 1rem; /* Font size for links */
+}
+
+/* Link hover effect */
+.nav-links a:hover {
+  color: #ddd; /* Light gray on hover */
+}

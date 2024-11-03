@@ -1,8 +1,7 @@
 // src/components/shared/LoginSelection.jsx
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-
-const LoginSelection = () => {
+ import { useNavigate } from 'react-router-dom';
+ import './LoginSelection.css'; // CSS import without alias
+ const LoginSelection = () => {
   const navigate = useNavigate();
 
   const handleSelection = (role) => {

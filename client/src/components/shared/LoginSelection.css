@@ -1,9 +1,6 @@
-/* Updated CSS for Login Selection Page */
-html, body {
-  height: 100%; /* Ensures the body takes the full height of the viewport */
-  margin: 0; /* Remove default margin */
-}
+/* LoginSelection.css */
 
+/* Ensure the full viewport height and width for the container */
 .login-selection-container {
   display: flex;
   flex-direction: column;
@@ -11,18 +8,18 @@ html, body {
   justify-content: center;
   height: 100vh; /* Full height of the viewport */
   width: 100vw; /* Full width of the viewport */
-  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%); /* Gradient background */
-  font-family: 'Roboto', sans-serif; /* Modern, clean font */
-  padding: 20px; /* Optional padding for better spacing on small devices */
+  background-color: #001f3f; /* Dark blue background */
+  color: white; /* White text color for contrast */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  padding: 20px; /* Padding for better spacing on small devices */
   box-sizing: border-box; /* Ensure padding does not affect total width/height */
 }
 
+/* Center the heading */
 h1 {
   margin-bottom: 50px;
-  font-size: 36px; /* Increased font size */
-  color: #ffffff; /* White text for contrast */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow for better visibility */
-  text-align: center; /* Center text for better aesthetics */
+  font-size: 36px; /* Heading font size */
+  text-align: center; /* Center the heading text */
 }
 
 /* Center login options */
@@ -34,16 +31,16 @@ h1 {
 
 /* Styling for login buttons */
 .login-btn {
-  padding: 20px 40px; /* Larger padding for a more prominent button */
+  padding: 20px 40px; /* Padding for buttons */
   font-size: 20px; /* Button text size */
-  font-weight: bold;
+  font-weight: bold; /* Bold text */
   border: none; /* No border */
-  border-radius: 8px; /* Softer, rounded corners */
+  border-radius: 8px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
-  background-color: #007bff; /* Vibrant blue background */
-  color: white; /* White text color */
+  background-color: #007bff; /* Light blue background for buttons */
+  color: white; /* White text for buttons */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
 /* Button hover effects */
@@ -56,28 +53,28 @@ h1 {
 /* Button focus styles */
 .login-btn:focus {
   outline: none; /* Remove default focus outline */
-  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Add focus outline for accessibility */
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Focus outline for accessibility */
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   h1 {
-      font-size: 28px; /* Smaller font size for mobile devices */
+    font-size: 28px; /* Smaller font size for mobile devices */
   }
 
   .login-btn {
-      padding: 15px 30px; /* Adjust padding for smaller screens */
-      font-size: 18px; /* Smaller font size for buttons */
+    padding: 15px 30px; /* Adjust padding for smaller screens */
+    font-size: 18px; /* Smaller font size for buttons */
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-      font-size: 24px; /* Even smaller font size for very small screens */
+    font-size: 24px; /* Even smaller font size for very small screens */
   }
 
   .login-btn {
-      padding: 12px 25px; /* Further adjust padding for small devices */
-      font-size: 16px; /* Further adjust font size for buttons */
+    padding: 12px 25px; /* Further adjust padding for small devices */
+    font-size: 16px; /* Further adjust font size for buttons */
   }
 }
