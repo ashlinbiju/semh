@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './Navbar.css'; // Make sure this file exists and styles are applied correctly
 
 const Navbar = () => {
   return (
@@ -22,7 +22,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/shared/Login">
-              Login
+              Logout
             </Link>
           </li>
         </ul>
