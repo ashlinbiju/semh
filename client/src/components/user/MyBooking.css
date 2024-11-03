@@ -1,0 +1,81 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.my-bookings-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.bookings-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 40px; /* Increased gap for more space between items */
+}
+
+.booking-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Increased height to make the booking item longer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px; /* Increased width to make booking items appear longer */
+}
+
+.booking-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.booking-item p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.status {
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.status.approved {
+    color: green;
+}
+
+.status.pending {
+    color: orange;
+}
+
+.status.rejected {
+    color: red;
+}
+
+.cancel-btn {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background-color: #ff1f1f;
+}
+
+.no-bookings {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}
